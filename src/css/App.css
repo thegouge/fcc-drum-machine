@@ -1,0 +1,43 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+#drum-machine {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+#drumGrid {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.drum-pad {
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5%;
+  padding: 30%;
+  background: grey;
+  color: white;
+  font-size: 30px;
+}
+
+.clicked {
+  background: rgb(206, 206, 206);
+  color: rgb(9, 46, 9);
+}
+
+@media only screen and (max-width: 635px) {
+  #drum-machine {
+    width: 100%;
+  }
+}
