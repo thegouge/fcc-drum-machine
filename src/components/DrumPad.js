@@ -37,7 +37,7 @@ class DrumPad extends Component {
         onMouseDown={this.playSound}
         onMouseUp={this.unclick}
       >
-        <audio className="clip" id={letter} src={sound} />
+        <audio className="clip" id={letter} src={sound} onLoad />
         {letter}
       </div>
     );
