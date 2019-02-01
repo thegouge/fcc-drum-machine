@@ -5,7 +5,9 @@ import "../css/toolbar.css";
 const Toolbar = (props) => {
   return (
     <div id="toolBar">
-      <p id="display">{props.description !== "" && props.description}</p>
+      <h2 id="display">
+        {props.description !== "" ? props.description : "Play a drum!"}
+      </h2>
     </div>
   );
 };
