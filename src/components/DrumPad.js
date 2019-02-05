@@ -16,7 +16,6 @@ class DrumPad extends Component {
     const letter = this.props.letter;
     if (!e.key || letter === e.key.toUpperCase()) {
       document.getElementById(letter).play();
-      console.log(`played ${letter}!`);
       this.setState({
         classes: "drum-pad clicked"
       });
@@ -37,7 +36,7 @@ class DrumPad extends Component {
         onMouseDown={this.playSound}
         onMouseUp={this.unclick}
       >
-        <audio className="clip" id={letter} src={sound} onLoad />
+        <audio className="clip" id={letter} src={sound} preload="auto" />
         {letter}
       </div>
     );
