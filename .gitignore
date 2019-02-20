@@ -17,11 +17,3 @@ yarn-debug.log*
 yarn-error.log*
 .vs
 
-# unused assets
-src/assets/Chants
-src/assets/FX
-src/assets/Hats
-src/assets/Kick
-src/assets/Open Hats
-src/assets/Percs
-src/assets/Snares
